@@ -51,28 +51,7 @@ const experiences = [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop",
   },
 
-  {
-    number: "03",
-    type: "TECHNICAL EXPERTISE",
-
-    company:
-      "AI & Software Engineering",
-
-    role:
-      "Full Stack AI Developer",
-
-    duration:
-      "2024 - Present",
-
-    description:
-      "Built intelligent systems across NLP, LLM automation, computer vision, backend systems, and scalable software engineering with focus on real-world deployment and performance.",
-
-    skills:
-      "Python • React • Spring Boot • AI • OpenCV",
-
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop",
-  },
+  
 ];
 
 function ExperienceCard({
