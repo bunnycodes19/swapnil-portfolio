@@ -67,6 +67,93 @@ export default function HeroSection({
               HI, I&apos;M
               SWAPNIL
             </h1>
+            <p
+              className="
+              text-center
+              uppercase
+              tracking-[0.4em]
+              text-[#D7E2EA]
+              text-sm
+              md:text-base
+              lg:text-lg
+              mt-2
+            "
+            >
+              GenAI • RAG • LLM Applications
+            </p>
+
+            <p
+              className="
+              text-center
+              text-white/60
+              uppercase
+              tracking-[0.25em]
+              text-xs
+              md:text-sm
+              mt-3
+            "
+            >
+              FSSAI AI Intern • ECE @ TIET
+            </p>
+            <div
+              className="
+              flex
+              justify-center
+              flex-wrap
+              gap-8
+              mt-8
+            "
+            >
+              {[
+                { value: "5000+", label: "Pages Processed" },
+                { value: "100K+", label: "Records Analyzed" },
+                { value: "89%", label: "mAP@0.5" },
+                { value: "98%", label: "Accuracy" },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="text-center"
+                >
+                  <div
+                    className="
+                    text-white
+                    font-bold
+                    text-2xl
+                    md:text-3xl
+                    "
+                  >
+                    {item.value}
+                  </div>
+
+                  <div
+                    className="
+                    text-white/60
+                    uppercase
+                    tracking-widest
+                    text-[10px]
+                    md:text-xs
+                    mt-1
+                    "
+                  >
+                    {item.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p
+              className="
+              text-center
+              uppercase
+              tracking-[0.4em]
+              text-[#D7E2EA]
+              text-sm
+              md:text-base
+              lg:text-lg
+              mt-2
+            "
+            >
+              Data Science • RAG • LLM •  REST APIs • DBMS
+            </p>
           </div>
         </FadeIn>
 
@@ -142,19 +229,15 @@ export default function HeroSection({
               tracking-wide
               leading-snug
               text-[clamp(0.75rem,1.4vw,1.5rem)]
-              max-w-[160px]
-              sm:max-w-[220px]
-              md:max-w-[260px]
+              max-w-[220px]
             "
             >
-              an ai engineer
-              driven by building
-              intelligent systems,
-              scalable software,
-              and practical
-              solutions that
-              create measurable
-              impact
+              Building
+              production-ready
+              GenAI applications,
+              RAG systems,
+              and AI-powered
+              software.
             </p>
           </FadeIn>
 
@@ -163,42 +246,102 @@ export default function HeroSection({
             delay={0.5}
             y={20}
           >
-            <button
-              onClick={
-                onContactClick
-              }
-              className="
-              relative
-              rounded-full
-              px-8
-              py-4
-              sm:px-10
-              md:px-12
-              text-xs
-              sm:text-sm
-              md:text-base
-              font-medium
-              uppercase
-              tracking-widest
-              text-white
-              border-2
-              border-white
-              hover:scale-105
-              transition-all
-            "
-              style={{
-                background:
-                  "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",
+            <div className="flex gap-4 flex-wrap justify-end">
+              <button
+                onClick={onContactClick}
+                className="
+                relative
+                rounded-full
+                px-8
+                py-4
+                sm:px-10
+                md:px-12
+                text-xs
+                sm:text-sm
+                md:text-base
+                font-medium
+                uppercase
+                tracking-widest
+                text-white
+                border-2
+                border-white
+                hover:scale-105
+                transition-all
+                "
+                style={{
+                  background:
+                    "linear-gradient(123deg, #18011F 7%, #B600A8 37%, #7621B0 72%, #BE4C00 100%)",
+                  boxShadow:
+                    "0px 4px 4px rgba(181,1,167,0.25), inset 4px 4px 12px #7721B1",
+                }}
+              >
+                Contact Me
+              </button>
 
-                boxShadow:
-                  "0px 4px 4px rgba(181,1,167,0.25), inset 4px 4px 12px #7721B1",
-              }}
-            >
-              Contact Me
-            </button>
+              <a
+                href="/Swapnil_Mehta_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                rounded-full
+                px-8
+                py-4
+                sm:px-10
+                md:px-12
+                text-xs
+                sm:text-sm
+                md:text-base
+                font-medium
+                uppercase
+                tracking-widest
+                text-white
+                border-2
+                border-white
+                hover:bg-white/10
+                transition-all
+                "
+              >
+                View Resume
+              </a>
+            </div>
+            
           </FadeIn>
         </div>
       </div>
+      <div
+              className="
+              absolute
+              bottom-6
+              left-1/2
+              -translate-x-1/2
+              flex
+              flex-col
+              items-center
+              gap-2
+              z-20
+              "
+            >
+              <span
+                className="
+                text-white/50
+                uppercase
+                tracking-[0.3em]
+                text-[10px]
+                "
+              >
+                Scroll
+              </span>
+
+              <div
+                className="
+                animate-bounce
+                text-white/60
+                text-xl
+                "
+              >
+                ↓
+              </div>
+            </div>
     </section>
   );
 }

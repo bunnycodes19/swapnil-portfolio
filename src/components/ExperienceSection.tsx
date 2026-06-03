@@ -27,6 +27,7 @@ const experiences = [
 
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop",
+    location: "New Delhi, India"
   },
 
   {
@@ -49,6 +50,7 @@ const experiences = [
 
     image:
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop",
+    location: "Patiala, India"
   },
 
   
@@ -173,6 +175,16 @@ function ExperienceCard({
             "
             >
               {experience.duration}
+            </div>
+
+            <div
+              className="
+              text-sm
+              text-white/50
+              mt-1
+            "
+            >
+              {experience.location}
             </div>
           </div>
 

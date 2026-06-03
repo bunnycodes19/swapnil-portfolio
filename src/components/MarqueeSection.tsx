@@ -7,68 +7,98 @@ import {
 
 const marqueeItems = [
   {
-    title: "VisionX",
+    title: "ResearchMind AI",
     subtitle:
-      "AI Smart Assistive Glasses",
-    tech:
-      "OpenCV • Raspberry Pi • TTS",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop",
+    "Generative AI Research Assistant",
+
+  
+  tech:
+    "LangChain • Gemini • FAISS • FastAPI",
+
+  image:
+    "https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1400&auto=format&fit=crop",
+  
+
   },
 
   {
-    title: "FSSAI AI",
-    subtitle:
-      "Chatbot Optimization",
-    tech:
-      "LLM • Retrieval • NLP",
-    image:
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1400&auto=format&fit=crop",
+  title: "FSSAI RAG",
+  subtitle:
+  "Government Document Intelligence",
+
+    
+  tech:
+    "RAG • Embeddings • Vector Search",
+
+  image:
+    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1400&auto=format&fit=crop",
+    
+
   },
 
   {
-    title: "PCB Detection",
-    subtitle:
-      "Computer Vision Research",
-    tech:
-      "YOLOv5 • CV • DL",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop",
+  title: "PCB Detection",
+  subtitle:
+  "Computer Vision Research",
+
+    
+  tech:
+    "YOLOv5 • OpenCV • Deep Learning",
+
+  image:
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1400&auto=format&fit=crop",
+    
+
   },
 
   {
-    title:
-      "Smile Saviours",
-    subtitle:
-      "Dental SaaS Platform",
-    tech:
-      "React • Node • DB",
-    image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1400&auto=format&fit=crop",
+  title: "Smile Saviours",
+
+    
+  subtitle:
+    "Multi-Tenant SaaS Platform",
+
+  tech:
+    "NestJS • React • PostgreSQL",
+
+  image:
+    "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1400&auto=format&fit=crop",
+    
+
   },
 
   {
-    title:
-      "Spam Detection",
-    subtitle:
-      "98% Accuracy ML Model",
-    tech:
-      "Python • NLP • ML",
-    image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1400&auto=format&fit=crop",
+  title: "VisionX",
+
+    
+  subtitle:
+    "AI Smart Assistive Glasses",
+
+  tech:
+    "OpenCV • Raspberry Pi • TTS",
+
+  image:
+    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1400&auto=format&fit=crop",
+    
+
   },
 
   {
-    title:
-      "Semantic Search",
-    subtitle:
-      "Low Latency Retrieval",
-    tech:
-      "Indexing • Search",
-    image:
-      "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?q=80&w=1400&auto=format&fit=crop",
+  title: "Semantic Retrieval",
+
+    
+  subtitle:
+    "Embeddings + Vector Databases",
+
+  tech:
+    "FAISS • ChromaDB • Search",
+
+  image:
+    "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?q=80&w=1400&auto=format&fit=crop",
+    
+
   },
-];
+  ];
 
 function MarqueeCard({
   item,

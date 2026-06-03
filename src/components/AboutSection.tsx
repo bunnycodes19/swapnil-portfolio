@@ -211,7 +211,7 @@ export default function AboutSection({
             text-xs
           "
           >
-            LLM Automation
+            RAG Systems
           </p>
         </div>
       </FadeIn>
@@ -254,8 +254,20 @@ export default function AboutSection({
         text-[clamp(1rem,1.8vw,1.45rem)]
         break-normal
         whitespace-normal
-        "text="AI and Software Engineering undergraduate final year student with hands-on experience in LLM automation, intelligent retrieval systems, computer vision, and scalable software development across government and research environments. I focus on solving practical problems through measurable systems, low-computation architectures, and production-minded engineering."
+        "text="Electronics and Communication Engineering student at Thapar Institute of Engineering and Technology focused on building Generative AI applications, Retrieval-Augmented Generation systems, intelligent document processing platforms, and production-ready AI software. My experience spans LLM-powered assistants, semantic search pipelines, vector databases, computer vision systems, and scalable backend engineering across government and research environments."
 />
+        <p
+          className="
+          text-center
+          text-white/60
+          uppercase
+          tracking-[0.25em]
+          text-xs
+          md:text-sm
+        "
+        >
+          FSSAI Intern • ResearchMind AI • Computer Vision Research
+        </p>
 
         {/* SAME CONTACT POPUP BUTTON */}
         <button
