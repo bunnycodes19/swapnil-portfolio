@@ -67,48 +67,7 @@ export default function HeroSection({
               HI, I&apos;M
               SWAPNIL
             </h1>
-            <p
-              className="
-              text-center
-              uppercase
-              tracking-[0.4em]
-              text-[#D7E2EA]
-              text-sm
-              md:text-base
-              lg:text-lg
-              mt-2
-            "
-            >
-              GenAI • RAG • LLM Applications
-            </p>
-
-            <p
-              className="
-              text-center
-              text-white/60
-              uppercase
-              tracking-[0.25em]
-              text-xs
-              md:text-sm
-              mt-3
-            "
-            >
-              FSSAI AI Intern • ECE @ TIET
-            </p>
-            <p
-              className="
-              text-center
-              uppercase
-              tracking-[0.4em]
-              text-[#D7E2EA]
-              text-sm
-              md:text-base
-              lg:text-lg
-              mt-2
-            "
-            >
-              Data Science • RAG • LLM •  REST APIs • DBMS
-            </p>
+            
           </div>
         </FadeIn>
 

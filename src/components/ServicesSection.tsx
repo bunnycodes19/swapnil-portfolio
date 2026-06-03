@@ -60,7 +60,7 @@ return ( <section
        text-[clamp(3rem,12vw,160px)]
      "
      >
-Core Expertise </h2> </FadeIn>
+Skills </h2> </FadeIn>
 
 ```
   <div className="max-w-5xl mx-auto">

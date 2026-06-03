@@ -245,16 +245,16 @@ export default function AboutSection({
         </FadeIn>
 
         <AnimatedText
-        className="
-        max-w-[900px]
-        px-6
-        md:px-0
-        text-center
-        leading-[1.8]
-        text-[clamp(1rem,1.8vw,1.45rem)]
-        break-normal
-        whitespace-normal
-        "text="Electronics and Communication Engineering student at Thapar Institute of Engineering and Technology focused on building Generative AI applications, Retrieval-Augmented Generation systems, intelligent document processing platforms, and production-ready AI software. My experience spans LLM-powered assistants, semantic search pipelines, vector databases, computer vision systems, and scalable backend engineering across government and research environments."
+          className="
+          max-w-[1100px]
+          w-full
+          px-8
+          text-center
+          leading-[1.9]
+          text-[clamp(1rem,1.6vw,1.4rem)]
+          whitespace-normal
+          break-words
+          "text="Electronics and Communication Engineering student at Thapar Institute of Engineering and Technology focused on building Generative AI applications, Retrieval-Augmented Generation systems, intelligent document processing platforms, and production-ready AI software. My experience spans LLM-powered assistants, semantic search pipelines, vector databases, computer vision systems, and scalable backend engineering across government and research environments."
 />
         <p
           className="
