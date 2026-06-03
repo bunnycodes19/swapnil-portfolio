@@ -95,51 +95,6 @@ export default function HeroSection({
             >
               FSSAI AI Intern • ECE @ TIET
             </p>
-            <div
-              className="
-              flex
-              justify-center
-              flex-wrap
-              gap-8
-              mt-8
-            "
-            >
-              {[
-                { value: "5000+", label: "Pages Processed" },
-                { value: "100K+", label: "Records Analyzed" },
-                { value: "89%", label: "mAP@0.5" },
-                { value: "98%", label: "Accuracy" },
-              ].map((item) => (
-                <div
-                  key={item.label}
-                  className="text-center"
-                >
-                  <div
-                    className="
-                    text-white
-                    font-bold
-                    text-2xl
-                    md:text-3xl
-                    "
-                  >
-                    {item.value}
-                  </div>
-
-                  <div
-                    className="
-                    text-white/60
-                    uppercase
-                    tracking-widest
-                    text-[10px]
-                    md:text-xs
-                    mt-1
-                    "
-                  >
-                    {item.label}
-                  </div>
-                </div>
-              ))}
-            </div>
             <p
               className="
               text-center
