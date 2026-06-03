@@ -1,4 +1,3 @@
-
 import {
   motion,
   useScroll,
@@ -14,6 +13,7 @@ interface Props {
 
 export default function AnimatedText({
   text,
+  className = "",
 }: Props) {
   const ref =
     useRef<HTMLParagraphElement>(
@@ -29,31 +29,33 @@ export default function AnimatedText({
       ],
     });
 
-  const letters =
-    text.split("");
+  const words =
+    text.split(" ");
 
   return (
     <p
       ref={ref}
-      className="
-      text-[#D7E2EA]
-      font-medium
-      text-center
-      leading-relaxed
-      max-w-[700px]
-      text-[clamp(1rem,2vw,1.35rem)]
-    "
+      className={`
+        text-[#D7E2EA]
+        font-medium
+        text-center
+        leading-relaxed
+        max-w-[1000px]
+        mx-auto
+        text-[clamp(1rem,2vw,1.35rem)]
+        ${className}
+      `}
     >
-      {letters.map(
-        (letter, index) => {
+      {words.map(
+        (word, index) => {
           const start =
             index /
-            letters.length;
+            words.length;
 
           const end =
             start +
             1 /
-              letters.length;
+              words.length;
 
           const opacity =
             useTransform(
@@ -63,34 +65,18 @@ export default function AnimatedText({
             );
 
           return (
-            <span
+            <motion.span
               key={index}
+              style={{
+                opacity,
+              }}
               className="
-              relative
-              inline-block
-            "
-            >
-              <span className="invisible">
-                {letter === " "
-                  ? "\u00A0"
-                  : letter}
-              </span>
-
-              <motion.span
-                style={{
-                  opacity,
-                }}
-                className="
-                absolute
-                left-0
-                top-0
+                inline-block
+                mr-[0.35em]
               "
-              >
-                {letter === " "
-                  ? "\u00A0"
-                  : letter}
-              </motion.span>
-            </span>
+            >
+              {word}
+            </motion.span>
           );
         }
       )}
